@@ -21,7 +21,7 @@ export const soft_scrape = async () => {
     var pageNumber = 1;
     var newData = [];
 
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: 'new' });
     const page = await browser.newPage();
 
     while(nextButton && !terminate){
@@ -87,7 +87,7 @@ export const hard_scrape = async () => {
     var pageNumber = 1;
     var newData = [];
 
-    const browser = await puppeteer.launch({ headless: false });
+    const browser = await puppeteer.launch({ headless: 'new' });
     const page = await browser.newPage();
 
     while(nextButton){
